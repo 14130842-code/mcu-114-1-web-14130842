@@ -23,6 +23,8 @@ nav {
 ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul > li {
@@ -39,12 +41,6 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: black;
-}
-
-.card {
-  border: solid 1px #999;
-  border-radius: 8px;
-  width: 250px;
 }
 
 input[type="text"] {
@@ -89,6 +85,19 @@ td.compay {
 td.price {
   text-align: right;
   width: 100px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: solid 1px #999;
+  border-radius: 8px;
+  width: 250px;
 }
 
 footer {
