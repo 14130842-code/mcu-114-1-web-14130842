@@ -1,6 +1,7 @@
 header {
   border-bottom: solid 1px #e5e7eb;
 
+  //header div.container
   div.container {
     max-width: 90vw;
     margin: 0px auto;
@@ -8,6 +9,7 @@ header {
     padding-left: 2rem;
     padding-right: 2rem;
 
+    //header div.container > div
     > div {
       height: 4rem;
 
@@ -25,7 +27,31 @@ header {
 
       > div {
         display: flex;
-        gap: 0.5rem;
+        align-items: center;
+
+        //div.left
+        &.left {
+          gap: 2rem;
+        }
+
+        //div.right
+        &.right {
+          gap: 0.5rem;
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 1.5rem;
+
+        a {
+          color: #4d5563;
+          text-decoration: inherit;
+
+          &:hover {
+            color: #137fec;
+          }
+        }
       }
     }
   }
