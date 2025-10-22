@@ -80,6 +80,14 @@ header {
           cursor: pointer;
         }
       }
+
+      button {
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: var(--text-color);
+      }
     }
   }
 }
